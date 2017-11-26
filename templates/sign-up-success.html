@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Successfully signed up, {{ name }}!</h1>
+<p>Below is some of the information you gave us:</p>
+<p>Username: {{ name }}</p>
+<p>Password: {{ password }}</p>
+{% if email %}
+<p>Email: {{ email }}</p>
+{% endif %}
+{% endblock %}
